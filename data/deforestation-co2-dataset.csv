@@ -1,0 +1,353 @@
+year,country,region,tree_cover_loss,co2_emissions
+2001,Bolivia,Amazon,1099451,8742807
+2002,Bolivia,Amazon,1398345,10403424
+2003,Bolivia,Amazon,1289790,10968004
+2004,Bolivia,Amazon,1581125,11031935
+2005,Bolivia,Amazon,1960181,12312617
+2006,Bolivia,Amazon,1688847,12332331
+2007,Bolivia,Amazon,1492762,12695380
+2008,Bolivia,Amazon,2853129,12965221
+2009,Bolivia,Amazon,1737681,13538143
+2010,Bolivia,Amazon,3527304,14718776
+2011,Bolivia,Amazon,2565829,15948673
+2012,Bolivia,Amazon,2140548,17535340
+2013,Bolivia,Amazon,1381359,17769010
+2014,Bolivia,Amazon,1994797,19887892
+2015,Bolivia,Amazon,1268106,19886526
+2016,Bolivia,Amazon,3622914,21239286
+2017,Bolivia,Amazon,3585115,22171246
+2018,Bolivia,Amazon,2312143,22501642
+2019,Bolivia,Amazon,6452845,22605112
+2020,Bolivia,Amazon,3352568,18326306
+2021,Bolivia,Amazon,4285678,21725994
+2022,Bolivia,Amazon,4637410,21493740
+2001,Brazil,Amazon,21424642,346165980
+2002,Brazil,Amazon,27492212,347765020
+2003,Brazil,Amazon,25409164,344645000
+2004,Brazil,Amazon,30234280,361434000
+2005,Brazil,Amazon,27409899,364371000
+2006,Brazil,Amazon,22578872,368871000
+2007,Brazil,Amazon,20458586,390573000
+2008,Brazil,Amazon,19152320,412638000
+2009,Brazil,Amazon,14164363,389775000
+2010,Brazil,Amazon,21002504,440269020
+2011,Brazil,Amazon,15061467,462580000
+2012,Brazil,Amazon,22951322,498309000
+2013,Brazil,Amazon,15669500,532418020
+2014,Brazil,Amazon,21682221,557901000
+2015,Brazil,Amazon,17906407,529353020
+2016,Brazil,Amazon,43165380,492748000
+2017,Brazil,Amazon,36417618,497121380
+2018,Brazil,Amazon,23866802,477998620
+2019,Brazil,Amazon,21875110,473464400
+2020,Brazil,Amazon,26592482,444504320
+2021,Brazil,Amazon,24295487,497206340
+2022,Brazil,Amazon,26825143,483477300
+2001,Cameroon,Congo Basin,298584,5562424
+2002,Cameroon,Congo Basin,224215,5350642
+2003,Cameroon,Congo Basin,191946,5704622
+2004,Cameroon,Congo Basin,176359,5698455
+2005,Cameroon,Congo Basin,193644,5423858
+2006,Cameroon,Congo Basin,294171,5485919
+2007,Cameroon,Congo Basin,376847,7409373
+2008,Cameroon,Congo Basin,292453,7320619
+2009,Cameroon,Congo Basin,286585,8554963
+2010,Cameroon,Congo Basin,469788,8383322
+2011,Cameroon,Congo Basin,217296,8105014
+2012,Cameroon,Congo Basin,398334,7603374
+2013,Cameroon,Congo Basin,666536,7849517
+2014,Cameroon,Congo Basin,1386859,8771510
+2015,Cameroon,Congo Basin,601146,9850663
+2016,Cameroon,Congo Basin,877884,9958010
+2017,Cameroon,Congo Basin,1398322,9578064
+2018,Cameroon,Congo Basin,917564,9645489
+2019,Cameroon,Congo Basin,915967,9591827
+2020,Cameroon,Congo Basin,1540399,9701611
+2021,Cameroon,Congo Basin,1272583,10297741
+2022,Cameroon,Congo Basin,1127835,9572651
+2001,Central African Republic,Congo Basin,235762,245488
+2002,Central African Republic,Congo Basin,261397,241824
+2003,Central African Republic,Congo Basin,104573,223504
+2004,Central African Republic,Congo Basin,113252,219840
+2005,Central African Republic,Congo Basin,217739,216176
+2006,Central African Republic,Congo Basin,425179,227168
+2007,Central African Republic,Congo Basin,286875,230832
+2008,Central African Republic,Congo Basin,240149,164880
+2009,Central African Republic,Congo Basin,364531,161216
+2010,Central African Republic,Congo Basin,364851,168544
+2011,Central African Republic,Congo Basin,364548,186864
+2012,Central African Republic,Congo Basin,425403,190528
+2013,Central African Republic,Congo Basin,343192,117248
+2014,Central African Republic,Congo Basin,445401,124576
+2015,Central African Republic,Congo Basin,215787,179536
+2016,Central African Republic,Congo Basin,393814,197856
+2017,Central African Republic,Congo Basin,501267,216176
+2018,Central African Republic,Congo Basin,331562,219840
+2019,Central African Republic,Congo Basin,403250,227168
+2020,Central African Republic,Congo Basin,434921,238160
+2021,Central African Republic,Congo Basin,524391,249235
+2022,Central African Republic,Congo Basin,414637,226226
+2001,Colombia,Amazon,1814222,56848172
+2002,Colombia,Amazon,1443157,55901212
+2003,Colombia,Amazon,962162,57378090
+2004,Colombia,Amazon,2006798,54646776
+2005,Colombia,Amazon,1492166,60161604
+2006,Colombia,Amazon,1500505,62304364
+2007,Colombia,Amazon,2126951,60491492
+2008,Colombia,Amazon,1834681,66963988
+2009,Colombia,Amazon,1879564,72460616
+2010,Colombia,Amazon,1563613,76266460
+2011,Colombia,Amazon,1506577,76224170
+2012,Colombia,Amazon,1807301,80255270
+2013,Colombia,Amazon,1112886,88104664
+2014,Colombia,Amazon,1618348,98284140
+2015,Colombia,Amazon,1126177,96774220
+2016,Colombia,Amazon,2325609,99685730
+2017,Colombia,Amazon,3393774,92275010
+2018,Colombia,Amazon,2819668,87112040
+2019,Colombia,Amazon,2149085,94497930
+2020,Colombia,Amazon,2595992,89731320
+2021,Colombia,Amazon,2127135,95765200
+2022,Colombia,Amazon,2132680,99717870
+2001,Ecuador,Amazon,356133,23407850
+2002,Ecuador,Amazon,236123,24827052
+2003,Ecuador,Amazon,109415,27071580
+2004,Ecuador,Amazon,293330,29258108
+2005,Ecuador,Amazon,318389,30589608
+2006,Ecuador,Amazon,281436,29689756
+2007,Ecuador,Amazon,476563,34279184
+2008,Ecuador,Amazon,410998,30314430
+2009,Ecuador,Amazon,455743,33598600
+2010,Ecuador,Amazon,268002,36276410
+2011,Ecuador,Amazon,347202,38263916
+2012,Ecuador,Amazon,590266,37408784
+2013,Ecuador,Amazon,388387,39654976
+2014,Ecuador,Amazon,248182,43731348
+2015,Ecuador,Amazon,240376,41275740
+2016,Ecuador,Amazon,351305,39357052
+2017,Ecuador,Amazon,567639,39174204
+2018,Ecuador,Amazon,308813,38429116
+2019,Ecuador,Amazon,284504,40065172
+2020,Ecuador,Amazon,390908,32909420
+2021,Ecuador,Amazon,242151,39731668
+2022,Ecuador,Amazon,420053,41613410
+2001,Equatorial Guinea,Congo Basin,28297,3094681
+2002,Equatorial Guinea,Congo Basin,23538,2761457
+2003,Equatorial Guinea,Congo Basin,15444,3133436
+2004,Equatorial Guinea,Congo Basin,3267,6137383
+2005,Equatorial Guinea,Congo Basin,12600,6208019
+2006,Equatorial Guinea,Congo Basin,9789,6181641
+2007,Equatorial Guinea,Congo Basin,24326,5723963
+2008,Equatorial Guinea,Congo Basin,37528,5941702
+2009,Equatorial Guinea,Congo Basin,44462,4901532
+2010,Equatorial Guinea,Congo Basin,51223,6402228
+2011,Equatorial Guinea,Congo Basin,60150,6094526
+2012,Equatorial Guinea,Congo Basin,38649,6900679
+2013,Equatorial Guinea,Congo Basin,57076,8196183
+2014,Equatorial Guinea,Congo Basin,149958,7672193
+2015,Equatorial Guinea,Congo Basin,58522,7033487
+2016,Equatorial Guinea,Congo Basin,74730,7558256
+2017,Equatorial Guinea,Congo Basin,93450,7862125
+2018,Equatorial Guinea,Congo Basin,61173,6008448
+2019,Equatorial Guinea,Congo Basin,74247,4637975
+2020,Equatorial Guinea,Congo Basin,37877,5524802
+2021,Equatorial Guinea,Congo Basin,69292,5629140
+2022,Equatorial Guinea,Congo Basin,60827,5076202
+2001,Gabon,Congo Basin,118249,6480018
+2002,Gabon,Congo Basin,108769,6250311
+2003,Gabon,Congo Basin,132450,6746069
+2004,Gabon,Congo Basin,78410,6386339
+2005,Gabon,Congo Basin,139373,6223081
+2006,Gabon,Congo Basin,150303,5542535
+2007,Gabon,Congo Basin,129762,5037635
+2008,Gabon,Congo Basin,135791,5378889
+2009,Gabon,Congo Basin,144147,5304448
+2010,Gabon,Congo Basin,83946,5836069
+2011,Gabon,Congo Basin,141846,5827907
+2012,Gabon,Congo Basin,136664,5629798
+2013,Gabon,Congo Basin,351623,5926811
+2014,Gabon,Congo Basin,384487,6369402
+2015,Gabon,Congo Basin,200905,6475558
+2016,Gabon,Congo Basin,252595,6521700
+2017,Gabon,Congo Basin,304290,5879220
+2018,Gabon,Congo Basin,209860,5473967
+2019,Gabon,Congo Basin,224171,5426023
+2020,Gabon,Congo Basin,172099,5928799
+2021,Gabon,Congo Basin,143586,5880372
+2022,Gabon,Congo Basin,230545,5705554
+2001,Guyana,Amazon,80117,1744064
+2002,Guyana,Amazon,38526,1714752
+2003,Guyana,Amazon,59131,1857648
+2004,Guyana,Amazon,32411,1927264
+2005,Guyana,Amazon,46548,1619488
+2006,Guyana,Amazon,47306,1509568
+2007,Guyana,Amazon,41878,1780704
+2008,Guyana,Amazon,75527,1707424
+2009,Guyana,Amazon,65955,1908944
+2010,Guyana,Amazon,80554,1886960
+2011,Guyana,Amazon,66805,1960240
+2012,Guyana,Amazon,104757,1960240
+2013,Guyana,Amazon,57222,1905280
+2014,Guyana,Amazon,97696,1972021
+2015,Guyana,Amazon,104675,2003336
+2016,Guyana,Amazon,212061,2374679
+2017,Guyana,Amazon,155523,2326815
+2018,Guyana,Amazon,94135,2502966
+2019,Guyana,Amazon,178499,2755782
+2020,Guyana,Amazon,126335,3188380
+2021,Guyana,Amazon,76400,3563899
+2022,Guyana,Amazon,84571,3537124
+2001,Indonesia,Southeast Asia,5911696,317027200
+2002,Indonesia,Southeast Asia,6788390,308485920
+2003,Indonesia,Southeast Asia,4330605,339357470
+2004,Indonesia,Southeast Asia,10231148,343021500
+2005,Indonesia,Southeast Asia,9394109,347617020
+2006,Indonesia,Southeast Asia,11360290,346633440
+2007,Indonesia,Southeast Asia,11016892,387858050
+2008,Indonesia,Southeast Asia,11082291,365718300
+2009,Indonesia,Southeast Asia,15439133,398942050
+2010,Indonesia,Southeast Asia,10173999,445806080
+2011,Indonesia,Southeast Asia,12275580,500724540
+2012,Indonesia,Southeast Asia,17968960,515954180
+2013,Indonesia,Southeast Asia,9068651,489055100
+2014,Indonesia,Southeast Asia,15047789,487889950
+2015,Indonesia,Southeast Asia,13853934,539149250
+2016,Indonesia,Southeast Asia,19195549,540085600
+2017,Indonesia,Southeast Asia,10341098,556944200
+2018,Indonesia,Southeast Asia,9695308,594101400
+2019,Indonesia,Southeast Asia,9370999,650905900
+2020,Indonesia,Southeast Asia,7655433,605984600
+2021,Indonesia,Southeast Asia,6713647,615923400
+2022,Indonesia,Southeast Asia,7058500,728883260
+2001,Malaysia,Southeast Asia,2634096,130890050
+2002,Malaysia,Southeast Asia,2477722,132035230
+2003,Malaysia,Southeast Asia,1458554,153384340
+2004,Malaysia,Southeast Asia,2795067,169678300
+2005,Malaysia,Southeast Asia,2983804,169967330
+2006,Malaysia,Southeast Asia,2658574,170166450
+2007,Malaysia,Southeast Asia,3227576,175450780
+2008,Malaysia,Southeast Asia,2933166,192847060
+2009,Malaysia,Southeast Asia,4965226,192119070
+2010,Malaysia,Southeast Asia,3434710,199346100
+2011,Malaysia,Southeast Asia,3696876,203452350
+2012,Malaysia,Southeast Asia,5015597,212989970
+2013,Malaysia,Southeast Asia,2660218,241671090
+2014,Malaysia,Southeast Asia,5159140,245049710
+2015,Malaysia,Southeast Asia,3628892,235505740
+2016,Malaysia,Southeast Asia,4514837,236817360
+2017,Malaysia,Southeast Asia,3866402,244105580
+2018,Malaysia,Southeast Asia,3504794,262207180
+2019,Malaysia,Southeast Asia,3166657,267494290
+2020,Malaysia,Southeast Asia,2161313,269248670
+2021,Malaysia,Southeast Asia,2230370,278861220
+2022,Malaysia,Southeast Asia,2000744,291071360
+2001,Peru,Amazon,686443,25415832
+2002,Peru,Amazon,641613,25439410
+2003,Peru,Amazon,589229,24675610
+2004,Peru,Amazon,808557,28334134
+2005,Peru,Amazon,1300327,30321106
+2006,Peru,Amazon,709328,28197278
+2007,Peru,Amazon,923973,34305970
+2008,Peru,Amazon,1010991,35298628
+2009,Peru,Amazon,1420446,39511240
+2010,Peru,Amazon,1136253,42505100
+2011,Peru,Amazon,1000288,42173068
+2012,Peru,Amazon,2199085,45508680
+2013,Peru,Amazon,1672757,43023884
+2014,Peru,Amazon,1641630,49388348
+2015,Peru,Amazon,1329483,49227884
+2016,Peru,Amazon,1843712,52732748
+2017,Peru,Amazon,2419189,54858950
+2018,Peru,Amazon,1691502,55848252
+2019,Peru,Amazon,1848775,58365044
+2020,Peru,Amazon,2226746,46965196
+2021,Peru,Amazon,1800049,56470120
+2022,Peru,Amazon,1887676,60921110
+2001,Philippines,Southeast Asia,277762,70326010
+2002,Philippines,Southeast Asia,255430,70266810
+2003,Philippines,Southeast Asia,278681,70286984
+2004,Philippines,Southeast Asia,385436,72806056
+2005,Philippines,Southeast Asia,394369,73303170
+2006,Philippines,Southeast Asia,455547,66553704
+2007,Philippines,Southeast Asia,527087,70795900
+2008,Philippines,Southeast Asia,307282,77330616
+2009,Philippines,Southeast Asia,481881,76610150
+2010,Philippines,Southeast Asia,812216,83063350
+2011,Philippines,Southeast Asia,264193,83908024
+2012,Philippines,Southeast Asia,476612,88628560
+2013,Philippines,Southeast Asia,475922,96035850
+2014,Philippines,Southeast Asia,825946,101483620
+2015,Philippines,Southeast Asia,528199,112449144
+2016,Philippines,Southeast Asia,1034706,121792456
+2017,Philippines,Southeast Asia,916870,135150080
+2018,Philippines,Southeast Asia,566544,141517820
+2019,Philippines,Southeast Asia,512450,144159980
+2020,Philippines,Southeast Asia,510643,132851040
+2021,Philippines,Southeast Asia,392381,142753780
+2022,Philippines,Southeast Asia,678637,150395980
+2001,Suriname,Amazon,29474,2362832
+2002,Suriname,Amazon,29683,1560114
+2003,Suriname,Amazon,36150,1537767
+2004,Suriname,Amazon,43212,1555785
+2005,Suriname,Amazon,28031,1588520
+2006,Suriname,Amazon,27171,1738560
+2007,Suriname,Amazon,28948,1756384
+2008,Suriname,Amazon,59976,1931568
+2009,Suriname,Amazon,58686,1990704
+2010,Suriname,Amazon,55924,2370056
+2011,Suriname,Amazon,45527,2755048
+2012,Suriname,Amazon,155900,2492080
+2013,Suriname,Amazon,81633,3147388
+2014,Suriname,Amazon,118226,3200660
+2015,Suriname,Amazon,95523,2713354
+2016,Suriname,Amazon,135218,2920766
+2017,Suriname,Amazon,144324,2426406
+2018,Suriname,Amazon,152105,2089318
+2019,Suriname,Amazon,147779,2635797
+2020,Suriname,Amazon,120934,2917944
+2021,Suriname,Amazon,98360,3682585
+2022,Suriname,Amazon,116420,3586520
+2001,Thailand,Southeast Asia,282224,172266850
+2002,Thailand,Southeast Asia,472835,184665460
+2003,Thailand,Southeast Asia,455099,191087730
+2004,Thailand,Southeast Asia,711733,207330690
+2005,Thailand,Southeast Asia,657951,214325140
+2006,Thailand,Southeast Asia,778964,215824670
+2007,Thailand,Southeast Asia,719532,224082600
+2008,Thailand,Southeast Asia,622476,224248700
+2009,Thailand,Southeast Asia,1032780,228836240
+2010,Thailand,Southeast Asia,1052220,241018980
+2011,Thailand,Southeast Asia,740925,244878160
+2012,Thailand,Southeast Asia,917569,262347660
+2013,Thailand,Southeast Asia,717681,263753500
+2014,Thailand,Southeast Asia,1129401,272487650
+2015,Thailand,Southeast Asia,974963,277098700
+2016,Thailand,Southeast Asia,1390312,284045300
+2017,Thailand,Southeast Asia,1581869,283347620
+2018,Thailand,Southeast Asia,1085824,288346340
+2019,Thailand,Southeast Asia,1073566,281870340
+2020,Thailand,Southeast Asia,994846,271852000
+2021,Thailand,Southeast Asia,1021811,267219020
+2022,Thailand,Southeast Asia,936916,270746370
+2001,Venezuela,Amazon,965475,130533940
+2002,Venezuela,Amazon,700546,164152850
+2003,Venezuela,Amazon,679957,154262140
+2004,Venezuela,Amazon,706236,142766900
+2005,Venezuela,Amazon,737304,148310640
+2006,Venezuela,Amazon,662817,155596930
+2007,Venezuela,Amazon,891199,153962110
+2008,Venezuela,Amazon,932289,155505170
+2009,Venezuela,Amazon,1100284,151848180
+2010,Venezuela,Amazon,792314,189316720
+2011,Venezuela,Amazon,581597,168413150
+2012,Venezuela,Amazon,835186,175719550
+2013,Venezuela,Amazon,526915,198427040
+2014,Venezuela,Amazon,819453,175961380
+2015,Venezuela,Amazon,493346,165853100
+2016,Venezuela,Amazon,1664646,152385310
+2017,Venezuela,Amazon,1334060,138226900
+2018,Venezuela,Amazon,897380,100734470
+2019,Venezuela,Amazon,1128613,87611624
+2020,Venezuela,Amazon,1115288,61956236
+2021,Venezuela,Amazon,514202,71613200
+2022,Venezuela,Amazon,446595,76892000
