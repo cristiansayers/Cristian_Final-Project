@@ -33,28 +33,24 @@ st.write('***Relationship Between Emissions and Temperature for the Previous Cen
 st.write('***Select Year Range***')
 year_range = st.slider('Year Range', int(co2_temp_data['Year'].min()), int(co2_temp_data['Year'].max()), (1970, 2020))
 
-# Filter data based on selected year range
 filtered_data = co2_temp_data[(co2_temp_data['Year'] >= year_range[0]) & (co2_temp_data['Year'] <= year_range[1])]
 
-# Correlation calculation
 correlation = filtered_data['Annual CO₂ emissions'].corr(filtered_data['Annual Temperature Anomaly'])
 
-# Visualization of correlation
 fig = px.scatter(filtered_data, x='Annual CO₂ emissions', y='Annual Temperature Anomaly', trendline='ols',
                  labels={'Annual CO₂ emissions': 'Global CO2 Emissions (tonnes)', 'Annual Temperature Anomaly': 'Temperature Anomaly (°C)'},
                  title='Correlation between Global CO2 Emissions and Temperature Anomaly',
                  color_continuous_scale=px.colors.diverging.Tealrose, color='Year')
 fig.update_layout(plot_bgcolor='rgba(0,0,0,0)')
 
-# Display correlation coefficient
 st.write('The relationship between global carbon dioxide emissions and yearly temperature anomaly can be shown through the a numerical correlation of the two values over a specified time period. This is the **correlation coefficient** shown below.')
 st.write('As the number more closely approaches 1, the relationship becomes more directly proportional between the temperature anomaly and co2 emissions per year.')
 st.write(f'**Correlation coefficient: {correlation:.2f}**')
-# Display scatter plot
+
 st.plotly_chart(fig, use_container_width=True)
 
 st.write('The plots below show the global carbon dioxide and temperature progressions over time.')
-# Line Charts for individual trends
+
 fig_co2 = px.line(filtered_data, x='Year', y='Annual CO₂ emissions', title='Global CO2 Emissions Over Time', line_shape='linear', render_mode='svg')
 fig_co2.update_traces(line_color='green')
 fig_temp = px.line(filtered_data, x='Year', y='Annual Temperature Anomaly', title='Global Temperature Anomalies Over Time', line_shape='linear', render_mode='svg')
@@ -72,21 +68,18 @@ st.write('> SSP1-26  > A ***sustainable and equitable*** global future with low 
 st.write('> SSP2-45  > A ***moderate effort*** at climate mitigation into the future.')
 st.write('> SSP5-Baseline  > A future with high greenhouse gas emissions and ***minimal climate restrictions***.')
 
-# Define a custom color palette for the scenarios
 colors = {
     "SSP1-26": "rgb(44, 160, 44)",  # Green
     "SSP2-45": "rgb(31, 119, 180)",  # Blue
     "SSP5-Baseline": "rgb(255, 127, 200)"  # Orange
 }
 
-# Create comparative analysis plots
 fig_emissions = go.Figure()
 fig_temperature = go.Figure()
 
 for scenario in projected_data['Scenario'].unique():
     scenario_data = projected_data[projected_data['Scenario'] == scenario]
     
-    # Add trace for CO2 Emissions comparison
     fig_emissions.add_trace(go.Scatter(
         x=scenario_data['Year'], y=scenario_data['CO2 Emissions'],
         mode='lines+markers',
@@ -95,7 +88,6 @@ for scenario in projected_data['Scenario'].unique():
         marker=dict(size=10, line=dict(width=2, color='DarkSlateGrey'))
     ))
     
-    # Add trace for Temperature Change comparison
     fig_temperature.add_trace(go.Scatter(
         x=scenario_data['Year'], y=scenario_data['Temperature Change'],
         mode='lines+markers',
@@ -104,7 +96,6 @@ for scenario in projected_data['Scenario'].unique():
         marker=dict(size=10, line=dict(width=2, color='DarkSlateGrey'))
     ))
 
-# Update layouts for the comparative plots
 common_layout_args = {
     'xaxis': {'title': 'Year'},
     'margin': {'l': 40, 'r': 40, 't': 40, 'b': 40},
@@ -128,10 +119,8 @@ st.plotly_chart(fig_emissions, use_container_width=True)
 
 st.plotly_chart(fig_temperature, use_container_width=True)
 
-# User interface to select a scenario
 selected_scenario = st.selectbox("Select a Scenario for Detailed View", options=projected_data['Scenario'].unique())
 
-# Detailed scenario-specific plot setup
 filtered_data = projected_data[projected_data['Scenario'] == selected_scenario]
 fig_detailed = go.Figure()
 
@@ -152,7 +141,6 @@ fig_detailed.add_trace(go.Scatter(
     yaxis='y2'
 ))
 
-# Update layout for the detailed plot
 fig_detailed.update_layout(
     title=f'CO2 Emissions vs. Temperature Change for the {selected_scenario} Scenario',
     xaxis_title='Year',
@@ -174,7 +162,6 @@ fig_detailed.update_layout(
     legend_title="Measurements"
 )
 
-# Display the detailed figure
 st.plotly_chart(fig_detailed, use_container_width=True)
 
 ###############################ECONOMY##########################################################
@@ -194,28 +181,25 @@ def create_bar_chart(data, x_column, y_column, title, color_map):
     st.plotly_chart(fig, use_container_width = True)
 
 
-# Define a list of hex colors for the color scheme
 hex_colors = [
-    '#1f77b4',  # muted blue
-    '#ff7f0e',  # safety orange
-    '#2ca02c',  # cooked asparagus green
-    '#d62728',  # brick red
-    '#9467bd',  # muted purple
-    '#8c564b',  # chestnut brown
-    '#e377c2',  # raspberry yogurt pink
-    '#7f7f7f',  # middle gray
-    '#bcbd22',  # curry yellow-green
-    '#17becf'   # blue-teal
+    '#1f77b4',  
+    '#ff7f0e',  
+    '#2ca02c',  
+    '#d62728',  
+    '#9467bd',  
+    '#8c564b',  
+    '#e377c2',  
+    '#7f7f7f',  
+    '#bcbd22',  
+    '#17becf'   
 ]
 
-# Set up the Streamlit interface
+
 st.write('The following visualizations show the relationships between the top 10 countries in carbon dioxide emissions for the year 2022, their GDP, and population size.')
 st.write('For exact values, hover over the bars/data points to see more information.')
 
-# Generate a color map using the list of hex colors
 color_map = assign_colors(gdp_emissions_data, 'Entity', hex_colors)
 
-# Sort the data for the bar charts
 data_gdp_sorted = gdp_emissions_data.sort_values(by='GDP (current US$)', ascending=False)
 data_pop_sorted = gdp_emissions_data.sort_values(by='Population, total', ascending=False)
 
@@ -311,25 +295,23 @@ def plot_dual_axis_trends(data, country=None):
     
     fig = go.Figure()
     
-    # Renewable energy share trace
     fig.add_trace(
         go.Scatter(
             x=data['Year'], y=data['Share of modern renewables in final energy consumption, World'],
             name='Renewable Energy Share (%)',
             mode='lines+markers',
-            line=dict(color='green', dash='dash'),  # Enhanced line style
+            line=dict(color='green', dash='dash'),  
             marker=dict(symbol='circle', size=8)
         )
     )
     
-    # CO₂ emissions trace
     fig.add_trace(
         go.Scatter(
             x=data['Year'], y=data['Annual CO₂ emissions'],
             name='CO₂ Emissions (tons)',
             mode='lines+markers',
             yaxis='y2',
-            line=dict(color='magenta', dash='dot'),  # Enhanced line style
+            line=dict(color='magenta', dash='dot'),  
             marker=dict(symbol='square', size=8)
         )
     )
@@ -376,10 +358,8 @@ st.write('> The visualizations below show the effects of deforestation on carbon
 st.write('***Dot size represents tree cover loss***')
 selected_region = st.selectbox('Select a Region:', deforestdata['region'].unique())
 
-# Filter data based on the selected region
 filtered_data = deforestdata[deforestdata['region'] == selected_region]
 
-# Scatter plot for tree cover loss vs CO2 emissions
 scatter_fig = px.scatter(filtered_data, x='tree_cover_loss', y='co2_emissions',
                          size='tree_cover_loss', color='country',
                          hover_data=['year', 'country'], title=f"CO2 Emissions vs. Tree Cover Loss in {selected_region}")
@@ -391,20 +371,16 @@ st.plotly_chart(scatter_fig, use_container_width=True)
 
 st.write('> From the scatter plots for each region, there is a consistent trend in which countries within the regions with higher tree cover loss emit greater amounts of carbon dioxide as a result')
 
-# Prepare data for the line plot by aggregating over years to smooth out the variations
 annual_data = filtered_data.groupby('year').agg({'tree_cover_loss': 'mean', 'co2_emissions': 'mean'}).reset_index()
 
-# Line plot for progression of tree cover loss and CO2 emissions over time with logarithmic scales
 line_fig = go.Figure()
 
-# Add tree cover loss trace with a secondary y-axis
 line_fig.add_trace(go.Scatter(x=annual_data['year'], y=annual_data['tree_cover_loss'],
                               mode='lines+markers',
                               name='Tree Cover Loss',
                               line=dict(color='blue', width=2),
                               marker=dict(size=10, opacity=0.8)))
 
-# Add CO2 emissions trace
 line_fig.add_trace(go.Scatter(x=annual_data['year'], y=annual_data['co2_emissions'],
                               mode='lines+markers',
                               name='CO2 Emissions',
@@ -412,7 +388,6 @@ line_fig.add_trace(go.Scatter(x=annual_data['year'], y=annual_data['co2_emission
                               marker=dict(size=10, opacity=0.8),
                               yaxis='y2'))
 
-# Update layout for clarity and logarithmic scaling
 line_fig.update_layout(
     title=f"Progression of Tree Cover Loss and CO2 Emissions Over Time in {selected_region}",
     xaxis_title="Year",
@@ -441,7 +416,6 @@ st.markdown('---')
 ##############################################################################################
 st.write('***Extreme Weather Event Frequency Correlation with Carbon Dioxide Emissions***')
 
-# Aggregating data
 annual_data = weatherdata.groupby('year').agg({
     'co2 emissions': 'sum',
     'natural disaster': 'count'
@@ -506,7 +480,6 @@ def create_emission_plot(df, country):
     filtered_df = df[df['Entity'] == country]
     filtered_df['SMA_3'] = filtered_df['Annual CO₂ emissions'].rolling(window=3, min_periods=1).mean()
 
-    # Creating the line chart
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=filtered_df['Year'], y=filtered_df['Annual CO₂ emissions'], mode='lines+markers',
                              name='Actual Emissions', line=dict(color='blue', width=3),
@@ -518,14 +491,12 @@ def create_emission_plot(df, country):
                              name='3-Year SMA', line=dict(color='red', dash='dash', width=2.5),
                              hoverinfo='skip'))
 
-    # Customize layout
     fig.update_layout(title=f'Annual CO₂ Emissions for {country} since enactment of Paris Agreement',
                       xaxis_title='Year',
                       yaxis_title='CO2 Emissions (tonnes)',
                       font=dict(color='white', size=12),
                       legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1))
 
-    # Calculate net difference in CO2 emissions from 2017 to 2022
     try:
         emissions_2017 = filtered_df[filtered_df['Year'] == 2017]['Annual CO₂ emissions'].values[0]
         emissions_2022 = filtered_df[filtered_df['Year'] == 2022]['Annual CO₂ emissions'].values[0]
@@ -548,7 +519,7 @@ if int(net_diff) >= 1:
     st.write(f'> ***Emissions are still trending upwards for {country}.***')
 else:
     st.write(f'> ***Emissions are decreasing for {country}.***')
-    # Display the net difference text
+
 if isinstance(net_diff, str):
     st.write(net_diff)
 else:
