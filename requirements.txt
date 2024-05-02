@@ -3,5 +3,5 @@ pandas
 plotly
 plotly.express
 numpy
-from plotly import graph_objs as go
+plotly.graph_objects
 plotly.subplots
