@@ -1,4 +1,5 @@
 pandas
+plotly
 plotly.express
 numpy
 plotly.graph_objects
